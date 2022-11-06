@@ -13,16 +13,6 @@ for state in data["states"]:
 with open("new_states.json", "w") as f:
     json.dump(data, f, indent=2)
 
-# python object to be appended
-y = {"pin": 110096}
 
-# parsing JSON string:
-z = json.loads(x)
-
-# appending the data
-z.update(y)
-
-# the result is a JSON string:
-print(json.dumps(z))
 
 
