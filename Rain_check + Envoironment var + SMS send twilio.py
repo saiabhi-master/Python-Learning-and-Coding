@@ -54,6 +54,10 @@ else:
 # when running in python everywhere:
 # export API_KEY=value; export anothervariable=value(if exists); python3.10 main.py
 
+#How to get an environment variable
+#APP_ID = os.environ.get("APP_ID")
+#API_KEY = os.environ.get("API_KEY")
+
 
 
 
