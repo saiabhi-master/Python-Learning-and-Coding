@@ -24,8 +24,19 @@ button.click()
 
 time.sleep(1000)
 
+# to scroll using selenium
+driver = webdriver.Chrome(executable_path=cdp)
+URL_new = 'https://stackoverflow.com/questions/20986631/how-can-i-scroll-a-web-page-using-selenium-webdriver-in-python'
+
+driver.get(URL_new)
+
+to_click = driver.find_element(By.XPATH, '/html/body/div[4]/div/button[1]')
+to_click.click()
+
+driver.execute_script("window.scrollTo(0, 4000)") #<<<<<<<<
 
 
+time.sleep(100)
 
 
 
